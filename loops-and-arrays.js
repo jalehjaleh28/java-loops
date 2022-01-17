@@ -3,8 +3,13 @@
 // Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
-
+const small= []
 const names = ["Henk", "Piet", "Fred", "Joop"];
+for(const item of names){
+    small.push(item+"je")
+
+}
+console.log(small)
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
@@ -13,21 +18,31 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
 
-
-
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+const cijfers = []
 const numbers = [2, 4, 5, 29, 38];
+for(const item of numbers){
+    if(item % 2 === 0){
+cijfers.push(item*2)
+
+    }else{
+        cijfers.push(item*3)
+    }
+
+}
+console.log(cijfers)
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
-// console.log(numbers) geeft: [ 4, 8, 10, 87, 76 ];
+// console.log(numbers) geeft: [ 4, 8, 10, 87, 76 ];"
+
 
 
 
@@ -39,8 +54,13 @@ const numbers = [2, 4, 5, 29, 38];
 // Het volume is lengte x breedte x hoogte
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
+const naam= [];
 const squares = [30, 2, 8, 24, 11];
+for(const item of squares){
+    naam.push("Het volume van " + item + " is " + Math.pow(item,3))
+}
+console.log(naam)
+
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
